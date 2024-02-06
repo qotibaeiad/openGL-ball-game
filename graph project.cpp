@@ -11,7 +11,7 @@ char top_view[100] = "Press 'g' for Top View";
 int f = 0, f2 = 0, f3 = 0, f4 = 0, flagset = 0;
 float righmax = 4.5, leftmax = -9, upmax = -4.5, downmax = 4.5;
 int cntarr[5] = { 0,0,0,0,0 };
-float kx[5] = { -3,-5,-2,0,-3 }, kz[5] = { 1,-1.5,-2.5,1,-3.5 };
+float kx[5] = { -3,5,2,1,-3 }, kz[5] = { 1,-1.5,-2.5,1,-3.5 };
 int Start = 0;
 
 
@@ -395,7 +395,6 @@ void Idle(void) {
 					//left
 					if (kador[i].x >= leftmax && kador[i].flagleftright == 1)
 					{
-						if (kador[i].flagpint == 0)
 						{
 							kx[i] -= 0.01118;
 						}
